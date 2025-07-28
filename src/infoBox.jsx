@@ -31,11 +31,6 @@ export default function InfoBox({ info }) {
     getCityImage(info.city).then((url) => {
       if (url)
          setImageUrl(url);
-        document.body.style.backgroundImage = `url(${url})`;
-      document.body.style.backgroundSize = 'cover';
-      document.body.style.backgroundRepeat = 'no-repeat';
-      document.body.style.backgroundPosition = 'center';
-      document.body.style.backgroundAttachment = 'fixed'; 
     });
 
   }, [info.city]); // Fetch new image whenever city changes
