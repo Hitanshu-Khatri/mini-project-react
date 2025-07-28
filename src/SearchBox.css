@@ -1,0 +1,32 @@
+.SearchBox{
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 14px;
+}
+
+.userinput .MuiOutlinedInput-root {
+  border-radius: 14px; /* or any value */
+  margin-right: 70px;
+  border-width: 2px !important;
+}
+
+Button{
+  
+    /* margin-top: 5px  !important; */
+  background-color: #3cbbff !important;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 14px !important;
+  height: 56px;
+  width: 112px;
+  font-size: 1rem !important;
+}
+
+h3{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
