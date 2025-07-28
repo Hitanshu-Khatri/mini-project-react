@@ -35,14 +35,6 @@ export default function InfoBox({ info }) {
 
   }, [info.city]); // Fetch new image whenever city changes
 
-  const backgroundStyle = {
-        backgroundImage: `url(${imageUrl})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        height: '100vh',
-    };
-
   return (
     <div className="InfoBox">
 
