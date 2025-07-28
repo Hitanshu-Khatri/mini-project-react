@@ -1,8 +1,8 @@
-.SearchBox{
+/* .SearchBox{
     text-align: center;
     margin-bottom: 25px;
     border-radius: 14px;
-}
+} */
 
 .userinput .MuiOutlinedInput-root {
   border-radius: 14px; /* or any value */
@@ -12,7 +12,7 @@
 
 Button{
   
-    /* margin-top: 5px  !important; */
+ 
   background-color: #3cbbff !important;
   color: white;
   padding: 14px;
@@ -29,4 +29,31 @@ h3{
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
+}
+
+.search-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+}
+.search-card button {
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: transform 0.2s;
+  
+}
+.search-card button:hover {
+  transform: translateY(-2px);
+}
+
+.search-box{
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

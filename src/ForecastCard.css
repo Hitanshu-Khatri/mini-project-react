@@ -41,3 +41,6 @@
   margin: 0.15rem 0;
   color: #020202;
 }
+.forecast-container { display: flex; gap: 12px; overflow-x: auto; padding: 16px; }
+.forecast-card { min-width: 140px; background:#e0f0ff; border-radius:8px; flex-shrink:0; padding:12px; text-align:center; }
+.forecast-card.today { border: 2px solid #007acc; }

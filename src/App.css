@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body { font-family: 'Inter', sans-serif; color:#333; }
+h1,h2 { font-weight:700; }
+h3,h4 { font-weight:600; }
+p, span { font-weight:400; }
+
+
+@media (max-width: 600px) {
+  .search-card { flex-direction: column; }
+  .forecast-card { min-width: 80%; }
+}

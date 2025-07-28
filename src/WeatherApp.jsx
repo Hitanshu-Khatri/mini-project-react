@@ -2,6 +2,8 @@ import SearchBox from './SearchBox';
 import InfoBox from './infoBox';
 import { useState } from 'react';
 import ForecastCard from './ForecastCard';
+import Box from '@mui/material/Box';
+import './ForecastCard.css';
 
 export default function WeatherApp() {
     const [weatherInfo, setWeatherInfo] = useState({
@@ -33,40 +35,49 @@ export default function WeatherApp() {
             <SearchBox updateInfo={updateInfo} />
             <InfoBox info={weatherInfo} />
 
-                {forecast ? (
+            {forecast ? (
                 <div style={{
-                    backgroundColor: "rgba(136, 135, 135, 0.77)",
-                    display: "block",
+                    backgroundColor: "rgb(255, 255, 255)",
+                    display: "inline-block",
                     borderRadius: "14px",
                     textAlign: "center",
-                    margin: "0px",
+                    marginTop: "10px",
                     padding: "0px",
-                    height:"65px",
+                    height: "65px",
+                    width: "fit-content",
                 }}>
 
-                    
-                    <h2 style={{
-                        fontSize: "50px",
+
+                    <h3 style={{
+                        fontSize: "25px",
                         textAlign: "center",
+                        justifyContent:'center',
                         color: "black",
-                        margin:"0%",
-                        width:"100%",
-                        display:"inline-block",
+                        margin: "0%",
+                        width: "fit-content",
+                        display: "inline-block",
+                        padding: "16px",
                     }}>
                         Weather of next 5 days
-                    </h2>
-                    
+                    </h3>
+
                 </div>
-                ): null}
-            
+            ) : null}
 
-            <div className="forecast-container">
+            <Box sx={{
+              
+                alignItems: 'center',
+                justifyContent: 'center',
+                
+            }}>
+                <div className="forecast-container">
 
-                {forecast && forecast.map((item, index) => (
-                    <ForecastCard key={index} forecast={item} />
-                ))}
+                    {forecast && forecast.map((item, index) => (
+                        <ForecastCard key={index} forecast={item} />
+                    ))}
 
-            </div>
+                </div>
+            </Box>
         </div>
 
     )
